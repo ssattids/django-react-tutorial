@@ -18,5 +18,6 @@ from django.urls import path, include
 
 #from the root path, get leads/urls.py to handle the urls
 urlpatterns = [
+    path('', include('frontend.urls')),
     path('', include('leads.urls')),
 ]
